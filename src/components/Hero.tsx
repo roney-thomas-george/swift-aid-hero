@@ -12,22 +12,21 @@ const Hero = () => {
           alt="Professional medical emergency response team" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-dark/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F766E]/95 to-[#2ACFBB]/90"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Quick Assist
-            <span className="block text-3xl md:text-4xl font-normal mt-2 text-primary-light">
-              Emergency & Medical Support
+            Resqly
+            <span className="block text-2xl md:text-3xl font-normal mt-4 text-white/90">
+              Your Trusted Healthcare Booking Platform
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
-            Professional emergency assistance, ambulance services, and medical support available 24/7. 
-            Your safety is our priority.
+            Book ambulances, doctor services, palliative care, and bystanders with ease.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">

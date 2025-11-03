@@ -51,10 +51,10 @@
     --radius: 0.75rem;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(176 77% 26%), hsl(176 77% 20%));
+    --gradient-hero: linear-gradient(180deg, hsl(176 77% 26%) 0%, hsl(173 66% 49%) 100%);
     --gradient-emergency: linear-gradient(135deg, hsl(var(--emergency)), hsl(0 85% 45%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 15% 98%));
+    --gradient-card: linear-gradient(145deg, hsl(173 66% 49% / 0.1), hsl(173 68% 75% / 0.05));
 
     /* Shadows */
     --shadow-card: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -1px hsl(var(--primary) / 0.06);

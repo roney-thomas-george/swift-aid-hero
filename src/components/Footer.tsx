@@ -9,13 +9,13 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">QA</span>
+                <span className="text-white font-bold text-lg">R</span>
               </div>
-              <h3 className="text-2xl font-bold">Quick Assist</h3>
+              <h3 className="text-2xl font-bold">Resqly</h3>
             </div>
             <p className="text-primary-foreground/80 mb-6 max-w-md">
-              Professional emergency and medical assistance services available 24/7. 
-              Your safety and well-being are our top priorities.
+              Your trusted healthcare booking platform available 24/7. 
+              Book ambulances, doctor services, palliative care, and bystanders with ease.
             </p>
             <div className="flex items-center space-x-2 text-emergency-light">
               <Shield className="w-5 h-5" />
@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5" />
-                <span>info@quickassist.com</span>
+                <span>info@resqly.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-1" />
@@ -66,7 +66,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/70">
-            © 2024 Quick Assist. All rights reserved. | Licensed Emergency Medical Service Provider
+            © 2024 Resqly. All rights reserved. | Licensed Healthcare Booking Service Provider
           </p>
         </div>
       </div>
