@@ -15,15 +15,15 @@
     --popover: 0 0% 100%;
     --popover-foreground: 225 15% 20%;
 
-    /* Primary - Medical Blue */
-    --primary: 210 100% 45%;
+    /* Primary - Teal (#0f766e) */
+    --primary: 176 77% 26%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 210 100% 85%;
-    --primary-dark: 210 100% 35%;
+    --primary-light: 173 68% 75%;
+    --primary-dark: 176 77% 20%;
 
-    /* Secondary - Professional Gray */
-    --secondary: 220 15% 96%;
-    --secondary-foreground: 225 15% 20%;
+    /* Secondary - Light Teal (#26C5B2) */
+    --secondary: 173 68% 46%;
+    --secondary-foreground: 0 0% 100%;
 
     /* Emergency Red */
     --emergency: 0 85% 55%;
@@ -38,15 +38,15 @@
     --muted: 220 15% 96%;
     --muted-foreground: 225 10% 55%;
 
-    --accent: 210 100% 95%;
-    --accent-foreground: 210 100% 45%;
+    --accent: 173 68% 90%;
+    --accent-foreground: 176 77% 26%;
 
     --destructive: 0 85% 55%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 15% 90%;
     --input: 220 15% 94%;
-    --ring: 210 100% 45%;
+    --ring: 176 77% 26%;
 
     --radius: 0.75rem;
 
@@ -88,13 +88,13 @@
     --popover: 225 15% 20%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 210 100% 60%;
-    --primary-foreground: 225 15% 20%;
-    --primary-light: 210 100% 85%;
-    --primary-dark: 210 100% 45%;
+    --primary: 173 68% 46%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 173 68% 75%;
+    --primary-dark: 176 77% 26%;
 
-    --secondary: 225 15% 25%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 173 68% 55%;
+    --secondary-foreground: 0 0% 100%;
 
     --emergency: 0 85% 65%;
     --emergency-foreground: 0 0% 100%;
@@ -107,15 +107,15 @@
     --muted: 225 15% 25%;
     --muted-foreground: 225 10% 65%;
 
-    --accent: 210 100% 25%;
-    --accent-foreground: 210 100% 85%;
+    --accent: 173 68% 35%;
+    --accent-foreground: 173 68% 85%;
 
     --destructive: 0 85% 65%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 225 15% 30%;
     --input: 225 15% 25%;
-    --ring: 210 100% 60%;
+    --ring: 173 68% 46%;
 
     /* Dark mode gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
