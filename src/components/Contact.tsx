@@ -41,7 +41,7 @@ const Contact = () => {
                     <Phone className="w-5 h-5 text-primary" />
                     <span className="font-semibold text-foreground">General Line</span>
                   </div>
-                  <p className="text-lg font-bold text-primary">(555) 123-4567</p>
+                  <p className="text-lg font-bold text-primary">+91 8050 444 580</p>
                   <p className="text-sm text-muted-foreground">Non-emergency inquiries</p>
                 </CardContent>
               </Card>
@@ -52,7 +52,7 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-primary" />
                     <span className="font-semibold text-foreground">Email</span>
                   </div>
-                  <p className="text-lg font-bold text-primary">info@quickassist.com</p>
+                  <p className="text-lg font-bold text-primary">info@resqly.com</p>
                   <p className="text-sm text-muted-foreground">24-hour response</p>
                 </CardContent>
               </Card>
@@ -63,11 +63,13 @@ const Contact = () => {
                 <div className="flex items-start space-x-3 mb-4">
                   <MapPin className="w-5 h-5 text-primary mt-1" />
                   <div>
-                    <span className="font-semibold text-foreground block mb-2">Service Area</span>
+                    <span className="font-semibold text-foreground block mb-2">Office Address</span>
                     <p className="text-muted-foreground">
-                      123 Medical Center Drive<br />
-                      Healthcare District<br />
-                      City, State 12345
+                      RESQLY PRIVATE LIMITED<br />
+                      OM CHAMBERS, 648/A, 4TH FLOOR<br />
+                      BINNAMANGALA, 1ST STAGE<br />
+                      INDIRANAGAR, BANGALORE<br />
+                      KARNATAKA - 560038
                     </p>
                   </div>
                 </div>
