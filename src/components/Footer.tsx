@@ -37,7 +37,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5" />
                 <div>
-                  <p className="font-semibold">(555) 123-4567</p>
+                  <p className="font-semibold">+91 8050 444 580</p>
                   <p className="text-sm text-primary-foreground/70">General inquiries</p>
                 </div>
               </div>
@@ -55,9 +55,10 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-1" />
                 <div className="text-sm">
-                  <p>123 Medical Center Drive</p>
-                  <p>Healthcare District</p>
-                  <p>City, State 12345</p>
+                  <p>OM CHAMBERS, 648/A, 4TH FLOOR</p>
+                  <p>BINNAMANGALA, 1ST STAGE</p>
+                  <p>INDIRANAGAR, BANGALORE</p>
+                  <p>KARNATAKA - 560038</p>
                 </div>
               </div>
             </div>
