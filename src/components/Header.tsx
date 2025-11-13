@@ -37,7 +37,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <Button variant="emergency" size="sm" className="hidden sm:flex">
               <Phone className="w-4 h-4" />
-              Emergency: 911
+              Emergency: +91 8050 444 580
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="w-5 h-5" />

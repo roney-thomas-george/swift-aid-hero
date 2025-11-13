@@ -29,7 +29,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-emergency mb-2">911</p>
+                <p className="text-2xl font-bold text-emergency mb-2">+91 8050 444 580</p>
                 <p className="text-muted-foreground">For immediate life-threatening emergencies</p>
               </CardContent>
             </Card>
@@ -157,7 +157,7 @@ const Contact = () => {
               </Button>
 
               <div className="text-center text-sm text-muted-foreground">
-                <p>For emergencies, please call 911 immediately.</p>
+                <p>For emergencies, please call +91 8050 444 580 immediately.</p>
                 <p>We typically respond to messages within 2-4 hours.</p>
               </div>
             </CardContent>
