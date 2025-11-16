@@ -3,8 +3,33 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    serviceType: "General Inquiry",
+    message: ""
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const subject = `${formData.serviceType} - ${formData.firstName} ${formData.lastName}`;
+    const body = `Name: ${formData.firstName} ${formData.lastName}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Service Type: ${formData.serviceType}
+
+Message:
+${formData.message}`;
+    
+    window.location.href = `mailto:support@resqly.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <section id="contact" className="py-24 bg-gradient-to-b from-secondary/30 to-background">
       <div className="container mx-auto px-4">
@@ -29,7 +54,12 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-emergency mb-2">+91 8050 444 580</p>
+                <a 
+                  href="tel:+918050444580"
+                  className="text-2xl font-bold text-emergency mb-2 hover:underline block"
+                >
+                  +91 8050 444 580
+                </a>
                 <p className="text-muted-foreground">For immediate life-threatening emergencies</p>
               </CardContent>
             </Card>
@@ -41,8 +71,15 @@ const Contact = () => {
                     <Phone className="w-5 h-5 text-primary" />
                     <span className="font-semibold text-foreground">General Line</span>
                   </div>
-                  <p className="text-lg font-bold text-primary">+91 8050 444 580</p>
-                  <p className="text-sm text-muted-foreground">Non-emergency inquiries</p>
+                  <a 
+                    href="https://wa.me/918050444580"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-bold text-primary hover:underline block"
+                  >
+                    +91 8050 444 580
+                  </a>
+                  <p className="text-sm text-muted-foreground">Non-emergency inquiries (WhatsApp)</p>
                 </CardContent>
               </Card>
 
@@ -52,7 +89,12 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-primary" />
                     <span className="font-semibold text-foreground">Email</span>
                   </div>
-                  <p className="text-lg font-bold text-primary">info@resqly.com</p>
+                  <a 
+                    href="mailto:info@resqly.in"
+                    className="text-lg font-bold text-primary hover:underline block"
+                  >
+                    info@resqly.in
+                  </a>
                   <p className="text-sm text-muted-foreground">24-hour response</p>
                 </CardContent>
               </Card>
@@ -99,67 +141,98 @@ const Contact = () => {
                 <span>Send Us a Message</span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <CardContent>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">
+                      First Name
+                    </label>
+                    <Input 
+                      placeholder="Your first name" 
+                      value={formData.firstName}
+                      onChange={(e) => setFormData({...formData, firstName: e.target.value})}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">
+                      Last Name
+                    </label>
+                    <Input 
+                      placeholder="Your last name" 
+                      value={formData.lastName}
+                      onChange={(e) => setFormData({...formData, lastName: e.target.value})}
+                      required
+                    />
+                  </div>
+                </div>
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    First Name
+                    Email Address
                   </label>
-                  <Input placeholder="Your first name" />
+                  <Input 
+                    type="email" 
+                    placeholder="your.email@example.com" 
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    required
+                  />
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    Last Name
+                    Phone Number
                   </label>
-                  <Input placeholder="Your last name" />
+                  <Input 
+                    type="tel" 
+                    placeholder="+91 XXXXX XXXXX" 
+                    value={formData.phone}
+                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    required
+                  />
                 </div>
-              </div>
 
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Email Address
-                </label>
-                <Input type="email" placeholder="your.email@example.com" />
-              </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Service Type
+                  </label>
+                  <select 
+                    className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground"
+                    value={formData.serviceType}
+                    onChange={(e) => setFormData({...formData, serviceType: e.target.value})}
+                  >
+                    <option>General Inquiry</option>
+                    <option>Medicine Booking</option>
+                    <option>Bystander Service</option>
+                    <option>Feedback</option>
+                    <option>Other</option>
+                  </select>
+                </div>
 
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Phone Number
-                </label>
-                <Input type="tel" placeholder="(555) 123-4567" />
-              </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Message
+                  </label>
+                  <Textarea 
+                    placeholder="Please describe how we can help you..."
+                    rows={4}
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    required
+                  />
+                </div>
 
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Service Type
-                </label>
-                <select className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground">
-                  <option>General Inquiry</option>
-                  <option>Medicine Booking</option>
-                  <option>Bystander Service</option>
-                  <option>Feedback</option>
-                  <option>Other</option>
-                </select>
-              </div>
+                <Button type="submit" variant="hero" size="lg" className="w-full">
+                  Send Message
+                </Button>
 
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Message
-                </label>
-                <Textarea 
-                  placeholder="Please describe how we can help you..."
-                  rows={4}
-                />
-              </div>
-
-              <Button variant="hero" size="lg" className="w-full">
-                Send Message
-              </Button>
-
-              <div className="text-center text-sm text-muted-foreground">
-                <p>For emergencies, please call +91 8050 444 580 immediately.</p>
-                <p>We typically respond to messages within 2-4 hours.</p>
-              </div>
+                <div className="text-center text-sm text-muted-foreground">
+                  <p>For emergencies, please call +91 8050 444 580 immediately.</p>
+                  <p>We typically respond to messages within 2-4 hours.</p>
+                </div>
+              </form>
             </CardContent>
           </Card>
         </div>

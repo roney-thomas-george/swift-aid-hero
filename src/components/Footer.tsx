@@ -30,15 +30,27 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-emergency-light" />
                 <div>
-                  <p className="font-bold text-emergency-light">+91 8050 444 580</p>
+                  <a 
+                    href="tel:+918050444580" 
+                    className="font-bold text-emergency-light hover:underline block"
+                  >
+                    +91 8050 444 580
+                  </a>
                   <p className="text-sm text-primary-foreground/70">Life-threatening emergencies</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5" />
                 <div>
-                  <p className="font-semibold">+91 8050 444 580</p>
-                  <p className="text-sm text-primary-foreground/70">General inquiries</p>
+                  <a 
+                    href="https://wa.me/918050444580"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold hover:underline block"
+                  >
+                    +91 8050 444 580
+                  </a>
+                  <p className="text-sm text-primary-foreground/70">General inquiries (WhatsApp)</p>
                 </div>
               </div>
             </div>
@@ -50,7 +62,12 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5" />
-                <span>info@resqly.com</span>
+                <a 
+                  href="mailto:info@resqly.in" 
+                  className="hover:underline"
+                >
+                  info@resqly.in
+                </a>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-1" />
