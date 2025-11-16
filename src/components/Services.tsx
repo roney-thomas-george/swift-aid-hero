@@ -137,9 +137,9 @@ const Services = () => {
         </div>
 
         {/* Non-Medical Services */}
-        <div>
+        <div className="flex flex-col items-center">
           <h3 className="text-3xl font-bold text-foreground mb-8 text-center">Non-Medical Services</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto justify-items-center">
             {nonMedicalServices.map((service, index) => (
               <Card 
                 key={index} 
