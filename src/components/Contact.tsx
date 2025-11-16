@@ -111,7 +111,7 @@ ${formData.message}`;
                       OM CHAMBERS, 648/A, 4TH FLOOR<br />
                       BINNAMANGALA, 1ST STAGE<br />
                       INDIRANAGAR, BANGALORE<br />
-                      KARNATAKA - 560038
+                      KARNATAKA, INDIA - 560038
                     </p>
                   </div>
                 </div>
