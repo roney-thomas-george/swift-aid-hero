@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/swift-aid-hero/',
+  // base: '/swift-aid-hero/',
+  base: '/',
   server: {
     host: "::",
     port: 8080,

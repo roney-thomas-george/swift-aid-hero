@@ -26,7 +26,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
-            Book ambulances, doctor services, palliative care, and bystanders with ease.
+            Book Ambulances, Doctor Consultations, Palliative Care, and By-standers with ease.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
