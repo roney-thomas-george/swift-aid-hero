@@ -126,6 +126,11 @@ const Services = () => {
                     variant={service.urgent ? "emergency" : "default"}
                     className="w-full font-semibold text-sm" 
                     size="sm"
+                    onClick={() => {
+                      if (service.urgent) {
+                        window.location.href = 'tel:+918050444580';
+                      }
+                    }}
                   >
                     {service.urgent && <Phone className="w-3 h-3" />}
                     {service.action}
