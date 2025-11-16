@@ -139,11 +139,11 @@ const Services = () => {
         {/* Non-Medical Services */}
         <div>
           <h3 className="text-3xl font-bold text-foreground mb-8 text-center">Non-Medical Services</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto justify-items-center">
             {nonMedicalServices.map((service, index) => (
               <Card 
                 key={index} 
-                className="relative overflow-hidden shadow-card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-card"
+                className="relative overflow-hidden shadow-card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-card w-full max-w-sm"
               >
                 <CardHeader className="text-center pb-3 p-4">
                   <div className="mx-auto w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-gradient-primary">

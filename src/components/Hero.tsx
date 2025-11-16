@@ -20,8 +20,8 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Resqly
-            <span className="block text-2xl md:text-3xl font-normal mt-4 text-white/90">
-              Your Trusted Healthcare Booking Platform
+            <span className="block text-2xl md:text-3xl font-normal italic mt-4 text-white/90">
+              Your Trusted Healthcare Partner
             </span>
           </h1>
           
@@ -30,7 +30,12 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <Button variant="emergency" size="xl" className="text-lg px-12">
+            <Button 
+              variant="emergency" 
+              size="xl" 
+              className="text-lg px-12"
+              onClick={() => window.location.href = 'tel:+918050444580'}
+            >
               <Phone className="w-6 h-6" />
               Call Ambulance Now
             </Button>

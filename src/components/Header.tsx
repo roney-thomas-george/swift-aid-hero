@@ -15,6 +15,12 @@ const Header = () => {
 
           <nav className="hidden md:flex items-center space-x-8">
             <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Home
+            </button>
+            <button 
               onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-foreground hover:text-primary transition-colors"
             >
@@ -35,7 +41,12 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="emergency" size="sm" className="hidden sm:flex">
+            <Button 
+              variant="emergency" 
+              size="sm" 
+              className="hidden sm:flex"
+              onClick={() => window.location.href = 'tel:+918050444580'}
+            >
               <Phone className="w-4 h-4" />
               Emergency: +91 8050 444 580
             </Button>
