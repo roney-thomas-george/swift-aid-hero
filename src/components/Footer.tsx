@@ -75,7 +75,7 @@ const Footer = () => {
                   <p>OM CHAMBERS, 648/A, 4TH FLOOR</p>
                   <p>BINNAMANGALA, 1ST STAGE</p>
                   <p>INDIRANAGAR, BANGALORE</p>
-                  <p>KARNATAKA - 560038</p>
+                  <p>KARNATAKA, INDIA- 560038</p>
                 </div>
               </div>
             </div>
