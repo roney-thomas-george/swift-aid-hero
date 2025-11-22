@@ -1,6 +1,7 @@
 import { Phone, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MobileMenu from "@/components/MobileMenu";
+import logoIcon from "@/assets/logo-icon.jpg";
 
 const Header = () => {
   return (
@@ -8,9 +9,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">R</span>
-            </div>
+            <img src={logoIcon} alt="Resqly Logo" className="w-10 h-10 rounded-lg object-contain" />
             <h1 className="text-2xl font-bold text-foreground">Resqly</h1>
           </div>
 

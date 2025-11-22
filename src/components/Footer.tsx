@@ -1,4 +1,6 @@
 import { Phone, Mail, MapPin, Shield } from "lucide-react";
+import logoIcon from "@/assets/logo-icon.jpg";
+import logoFull from "@/assets/logo-full.jpg";
 
 const Footer = () => {
   return (
@@ -8,10 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">R</span>
-              </div>
+              <img src={logoIcon} alt="Resqly Logo" className="w-10 h-10 rounded-lg object-contain" />
               <h3 className="text-2xl font-bold">Resqly</h3>
+            </div>
+            <div className="mb-4">
+              <img src={logoFull} alt="Resqly Full Logo" className="h-12 object-contain" />
             </div>
             <p className="text-primary-foreground/80 mb-6 max-w-md">
               Your trusted healthcare booking platform available 24/7. 
