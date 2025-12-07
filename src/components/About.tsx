@@ -11,7 +11,7 @@ const About = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Dedicated to providing exceptional emergency and medical assistance services 
-            with professionalism, compassion, and rapid response.
+            with professionalism, compassion and rapid response.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ const About = () => {
               <p className="text-lg text-muted-foreground leading-relaxed text-center">
                 To provide immediate, professional, and compassionate emergency assistance 
                 and medical support services to our community. We are committed to saving lives, 
-                reducing suffering, and ensuring that help is always just a call away, 
+                reducing suffering and ensuring that help is always just a call away;
                 24 hours a day, 7 days a week.
               </p>
             </CardContent>

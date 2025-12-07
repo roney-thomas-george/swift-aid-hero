@@ -56,7 +56,7 @@ const Services = () => {
     {
       icon: FlaskConical,
       title: "Laboratory Service",
-      description: "Home sample collection and accurate diagnostic testing services.",
+      description: "Results will be sent to you directly to your given mobile number and/or email.",
       action: "Book Now",
       urgent: false
     }
@@ -72,7 +72,19 @@ const Services = () => {
     {
       icon: HandHeart,
       title: "Share N Care",
-      description: "Community support services for shared care and assistance.",
+      description: "Surprise your loved ones with special gifts & presents to show your care.",
+      action: "Book Now"
+    },
+        {
+      icon: HandHeart,
+      title: "Cab Service",
+      description: "Resqly Cabs – Book your ride instantly, anytime, right at your fingertips.",
+      action: "Book Now"
+    },
+        {
+      icon: HandHeart,
+      title: "Festival Service",
+      description: "Customized gifts for every celebration: cakes, clothes, crackers, flowers, and more.",
       action: "Book Now"
     }
   ];
@@ -144,7 +156,7 @@ const Services = () => {
         {/* Non-Medical Services */}
         <div className="flex flex-col items-center">
           <h3 className="text-3xl font-bold text-foreground mb-8 text-center">Non-Medical Services</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 mx-auto justify-items-center">
             {nonMedicalServices.map((service, index) => (
               <Card 
                 key={index} 

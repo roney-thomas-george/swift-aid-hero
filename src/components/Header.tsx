@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img src={logoIcon} alt="Resqly Logo" className="w-10 h-10 rounded-lg object-contain" />
-            <h1 className="text-2xl font-bold text-foreground">Resqly</h1>
+            <h1 className="text-2xl font-bold text-foreground">ResQly</h1>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">

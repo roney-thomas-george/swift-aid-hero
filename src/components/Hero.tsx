@@ -12,14 +12,14 @@ const Hero = () => {
           alt="Professional medical emergency response team" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0F766E]/95 to-[#2ACFBB]/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F766E]/95 to-[#2ACFBB]/50"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Resqly
+            ResQly
             <span className="block text-2xl md:text-3xl font-normal italic mt-4 text-white/90">
               Your Trusted Healthcare Partner
             </span>
